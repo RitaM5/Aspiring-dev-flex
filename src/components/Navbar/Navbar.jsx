@@ -5,11 +5,14 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" z-50 w-full bg-base-100 font-poppins">
-      <nav className="bg-base-100">
+    <div className=" z-50 w-full font-poppins bg-gray-100 px-3 overflow-x-hidden">
+      <nav className="">
         <div className="flex font-poppins items-center font-medium justify-around h-20 ">
           <div className="z-50 w-full flex justify-between">
-            <h1 className=" relative right-20 md:right-0 text-[#298541] w-52 block text-3xl">Flex</h1>
+          <div className="inline-flex gap-2 items-center relative right-2 md:right-0 text-[#298541] w-52 ">
+          <img width="25" height="25" src="https://img.icons8.com/color/25/fries-menu.png" alt="fries-menu"/>
+            <h1 className=" text-3xl font-semibold">Flex</h1>
+          </div>
             <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
               <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
             </div>
